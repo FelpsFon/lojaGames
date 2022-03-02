@@ -99,10 +99,6 @@ export const colors = {
   gold500: '#FFD700',
 };
 
-export const fonts = {
-  ...defaultFonts,
-};
-
 export const list = {
   listItem: {
     flexDirection: 'row',
@@ -158,7 +154,6 @@ export const buttons = {
   },
   flatButton: {
     flex: 1,
-    fontFamily: fonts.montserrat,
     fontStyle: 'normal',
     fontWeight: 500,
     fontSize: 24,
@@ -170,7 +165,6 @@ export const buttons = {
   },
   raisedButton: {
     flex: 1,
-    fontFamily: fonts.montserrat,
     fontStyle: 'normal',
     fontWeight: 500,
     fontSize: 24,
@@ -182,7 +176,6 @@ export const buttons = {
   },
   flatButtonText: {
     flex: 1,
-    fontFamily: fonts.montserrat500,
     fontSize: 20,
     lineHeight: 24,
     letterSpacing: 0.5,
@@ -191,7 +184,6 @@ export const buttons = {
   },
   raisedButtonText: {
     flex: 1,
-    fontFamily: fonts.montserrat500,
     fontSize: 20,
     lineHeight: 24,
     letterSpacing: 0.5,
@@ -262,7 +254,6 @@ export const headerComponentStyle = {
   },
 
   title: {
-    ...fontProps.labelLarge,
     margin: 10,
     alignSelf: 'center',
   },
@@ -270,7 +261,6 @@ export const headerComponentStyle = {
 
 export const label = {
   labelLarge: {
-    fontFamily: fonts.montserrat600,
     fontSize: 22,
     lineHeight: 24,
     letterSpacing: 0.5,
@@ -278,7 +268,6 @@ export const label = {
   },
 
   labelMedium: {
-    fontFamily: fonts.montserrat600,
     fontSize: 16,
     lineHeight: 16,
     letterSpacing: 0.5,
@@ -286,7 +275,6 @@ export const label = {
   },
 
   labelSmall: {
-    fontFamily: fonts.montserrat600,
     fontSize: 12,
     lineHeight: 16,
     letterSpacing: 0.5,
@@ -294,7 +282,6 @@ export const label = {
   },
 
   labelTiny: {
-    fontFamily: fonts.montserrat600,
     fontSize: 8,
     lineHeight: 8,
     letterSpacing: 0.5,
@@ -304,13 +291,11 @@ export const label = {
 
 export const body = {
   default: {
-    fontFamily: fonts.roboto400,
     fontSize: 20,
     lineHeight: 24,
   },
 
   small: {
-    fontFamily: fonts.roboto400,
     fontSize: 14,
     lineHeight: 16,
     letterSpacing: 0.5,
@@ -325,13 +310,11 @@ export const body = {
 };
 
 export const title = {
-  fontFamily: fonts.montserrat600,
   fontSize: 38,
   lineHeight: 40,
 };
 
 export const subtitle = {
-  fontFamily: fonts.montserrat500,
   fontSize: 26,
   lineHeight: 32,
 };
