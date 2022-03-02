@@ -77,13 +77,13 @@ export const colors = {
   blue600: '#5C8AE5',
   blue700: '#4D78CB',
   blue900: '#132E63',
-  
+
   yellow500: '#EEBB55',
   yellow600: '#D6A84C',
   yellow700: '#BE9644',
   yellow800: '#8F7033',
   yellow900: '#5F4B22',
-  
+
   purple500: '#CC99FF',
   purple600: '#B88AE5',
   purple900: '#4661e5',
@@ -101,6 +101,48 @@ export const colors = {
 
 export const fonts = {
   ...defaultFonts,
+};
+
+export const list = {
+  listItem: {
+    flexDirection: 'row',
+    backgroundColor: '#6699AA',
+    borderRadius: 8,
+    height: 100,
+    margin: 4,
+
+    shadowColor: '#000000',
+    shadowOffset: {
+      width: 3,
+      height: 3,
+    },
+    shadowOpacity: 0.8,
+    shadowRadius: 10,
+    elevation: 10,
+    padding: 12,
+  },
+  imageView: {
+    flex: 1,
+    padding: 4,
+  },
+  backgroundImage: {
+    flex: 1,
+  },
+  descriptionView: {
+    flex: 2,
+  },
+  listItemText: {
+    color: '#FFFFFF',
+    fontSize: 24,
+    fontWeight: '600',
+    alignSelf: 'center',
+  },
+  listItemSubtitle: {
+    color: '#F0F0F0',
+    fontSize: 16,
+    fontWeight: '400',
+    alignSelf: 'center',
+  },
 };
 
 export const buttons = {
@@ -167,10 +209,10 @@ export const componentStyle = {
     paddingHorizontal: 32,
   },
   spinnerStyle: {
-		alignItems: 'center',
-		justifyContent: 'center',
-		flex: 1,
-	},
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1,
+  },
 };
 
 export const headerComponentStyle = {
