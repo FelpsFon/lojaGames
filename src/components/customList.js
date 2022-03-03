@@ -1,9 +1,9 @@
 import * as React from "react";
 import { View, Text, ImageBackground, FlatList } from "react-native";
 import { list } from "../assets/styles/BaseStyles";
-import DATA from "../assets/data/List"
+import "../assets/data/List"
 
-class customList extends React.Component {
+class CustomList extends React.Component {
   renderItem = ({ item }) => {
     return (
       <View style={list.listItem}>
@@ -36,4 +36,4 @@ class customList extends React.Component {
   }
 }
 
-export default customList;
+export default CustomList;

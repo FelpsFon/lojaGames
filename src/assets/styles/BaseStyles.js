@@ -171,7 +171,7 @@ export const buttons = {
     lineHeight: 24,
     textAlign: 'center',
     letterSpacing: 2,
-    backgroundColor: colors.fortuna500,
+    backgroundColor: colors.green500,
     borderRadius: 50,
   },
   flatButtonText: {
@@ -322,11 +322,16 @@ export const subtitle = {
 export default {
   mainContainer: {
     flex: 1,
-    backgroundColor: colors.white,
+    padding: 8,
+    backgroundColor: '#C0C0C0',
   },
 
   inputText: {
-    color: colors.greenMedium,
+    backgroundColor: colors.white,
+    borderColor: colors.greenMedium,
+    borderWidth: 3,
+    borderRadius: 16,
+    marginVertical: 4,
   },
 
   disableText: {

@@ -1,21 +1,21 @@
 import * as React from 'react';
-import { TouchableOpacity, View } from 'react-native';
+import { TouchableOpacity, View, Text } from 'react-native';
 import BaseStyles, { buttons } from '../assets/styles/BaseStyles';
 
 class CustomButton extends React.Component {
   render() {
-    const { navigation, screen, title } = this.props;
+    const { title, navigation, screen } = this.props;
     return (
       <View style={BaseStyles.mainContainer}>
         <TouchableOpacity
-          style={buttons.raisedButton}
+          style={buttons.flatButton}
           onPress={() => navigation.navigate(screen)} >
-          <Text>
+          <Text style={buttons.flatButtonText}>
             {`${title}`}
           </Text>
         </TouchableOpacity>
       </View>
-    )
+    );
   }
 }
 

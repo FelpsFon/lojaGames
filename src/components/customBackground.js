@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ImageBackground } from 'react-native';
 import { headerComponentStyle } from '../assets/styles/BaseStyles';
 
-class customBackground extends React.Component {
+class CustomBackground extends React.Component {
   render() {
     return (
       <ImageBackground
@@ -14,4 +14,4 @@ class customBackground extends React.Component {
   }
 }
 
-export default customBackground;
+export default CustomBackground;

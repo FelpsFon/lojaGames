@@ -1,23 +1,25 @@
 import * as React from 'react';
 import { View, Text, TextInput } from 'react-native';
-import BaseStyles from '../assets/styles/BaseStyles';
+import BaseStyles, { buttons } from '../assets/styles/BaseStyles';
+import CustomButton from '../components/CustomButton';
 
-const Login = () => {
+const Login = ({ navigation }) => {
   return (
     <View style={BaseStyles.mainContainer}>
-      <View>
+      <View style={{ padding: 32 }}>
         <Text>
-          {`Teste`}
+          {`Insira abaixo seu login:`}
         </Text>
         <TextInput
           style={BaseStyles.inputText}
-          placeholder='email'
+          placeholder='E-mail'
         />
         <TextInput
           style={BaseStyles.inputText}
-          placeholder='senha'
+          placeholder='Senha'
         />
       </View>
+      <CustomButton title="Entrar" screen="Details" navigation={navigation} />
     </View>
   )
 }
