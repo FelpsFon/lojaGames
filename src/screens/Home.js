@@ -5,27 +5,29 @@ import CustomButton from '../components/CustomButton';
 import CustomList from '../components/CustomList';
 import CustomIcon from '../components/CustomIcon';
 
-const Home = ({ navigation }) => {
+class Home extends React.Component {
+  render(){
   return (
     <View style={BaseStyles.mainContainer}>
     <View style={{ marginVertical: 25, flex: 1 }}>
       <CustomIcon />
     </View>
       <View style={list.customListView}>
-        <CustomList data={DATA} />
+        <CustomList data={DATA} navigation={this.props.navigation} />
       </View>
       <View style={{ flex: 1 }}>
         <CustomButton
-          title="Fazer Login" screen="Login" navigation={navigation}
+          title="Fazer Login" screen="Login" navigation={this.props.navigation}
         />
       </View>
       <View style={{ flex: 1 }}>
         <CustomButton
-          title="Sobre Nós" screen="About" navigation={navigation}
+          title="Sobre Nós" screen="About" navigation={this.props.navigation}
         />
       </View>
     </View>
-  )
+    )
+  }
 }
 
 const DATA = [

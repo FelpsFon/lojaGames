@@ -22,7 +22,7 @@ const MyStack = () => {
           options={{ title: '', headerStyle: { backgroundColor: '#43425d' }, headerShadowVisible: false }}
         />
         <Stack.Screen name="Details" component={Details}
-          options={{ title: {/*`${DATA.title}`*/}, headerTransparent: true }}
+          options={{ title: '', headerTransparent: true }}
         />
       </Stack.Navigator>
     </NavigationContainer>
