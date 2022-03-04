@@ -16,7 +16,7 @@ const Home = ({ navigation }) => {
       </View>
       <View style={{ flex: 1 }}>
         <CustomButton
-          title="Login" screen="Login" navigation={navigation}
+          title="Fazer Login" screen="Login" navigation={navigation}
         />
       </View>
       <View style={{ flex: 1 }}>
