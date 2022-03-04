@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ImageBackground } from 'react-native';
 import BaseStyles, { title } from '../assets/styles/BaseStyles';
 
 const Details = () => {
@@ -8,6 +8,9 @@ const Details = () => {
       <Text style={title}>
         {`TesteDetails`}
       </Text>
+      {/* <ImageBackground>
+        {``}
+      </ImageBackground> */}
     </View>
   );
 };
