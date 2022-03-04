@@ -102,9 +102,9 @@ export const colors = {
 export const list = {
   listItem: {
     flexDirection: 'row',
-    backgroundColor: '#6699AA',
-    borderRadius: 8,
-    height: 100,
+    backgroundColor: colors.blue900,
+    borderRadius: 12,
+    height: 140,
     margin: 4,
 
     shadowColor: '#000000',
@@ -112,10 +112,14 @@ export const list = {
       width: 3,
       height: 3,
     },
-    shadowOpacity: 0.8,
+    shadowOpacity: 0.9,
     shadowRadius: 10,
     elevation: 10,
     padding: 12,
+  },
+  customListView: {
+    flex: 6,
+    padding: 8,
   },
   imageView: {
     flex: 1,
@@ -153,7 +157,6 @@ export const buttons = {
     marginHorizontal: 32,
   },
   flatButton: {
-    flex: 1,
     fontStyle: 'normal',
     fontWeight: 500,
     fontSize: 24,
@@ -164,18 +167,17 @@ export const buttons = {
     borderRadius: 50,
   },
   raisedButton: {
-    flex: 1,
     fontStyle: 'normal',
     fontWeight: 500,
     fontSize: 24,
-    lineHeight: 24,
-    textAlign: 'center',
-    letterSpacing: 2,
-    backgroundColor: colors.green500,
+    backgroundColor: colors.blue600,
     borderRadius: 50,
+    height: 60,
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   flatButtonText: {
-    flex: 1,
     fontSize: 20,
     lineHeight: 24,
     letterSpacing: 0.5,
@@ -183,7 +185,6 @@ export const buttons = {
     textAlign: 'center',
   },
   raisedButtonText: {
-    flex: 1,
     fontSize: 20,
     lineHeight: 24,
     letterSpacing: 0.5,
@@ -239,9 +240,8 @@ export const headerComponentStyle = {
   },
 
   backImage: {
-    width: 24,
-    height: 24,
-    marginLeft: 5,
+    width: '100%',
+    height: '100%',
   },
 
   backText: {
@@ -264,28 +264,29 @@ export const label = {
     fontSize: 22,
     lineHeight: 24,
     letterSpacing: 0.5,
-    textTransform: 'uppercase',
+    //textTransform: 'uppercase',
   },
 
   labelMedium: {
+    color: colors.white,
     fontSize: 16,
     lineHeight: 16,
     letterSpacing: 0.5,
-    textTransform: 'uppercase',
+    //textTransform: 'uppercase',
   },
 
   labelSmall: {
     fontSize: 12,
     lineHeight: 16,
     letterSpacing: 0.5,
-    textTransform: 'uppercase',
+    //textTransform: 'uppercase',
   },
 
   labelTiny: {
     fontSize: 8,
     lineHeight: 8,
     letterSpacing: 0.5,
-    textTransform: 'uppercase',
+    //textTransform: 'uppercase',
   },
 };
 
@@ -310,8 +311,11 @@ export const body = {
 };
 
 export const title = {
-  fontSize: 38,
-  lineHeight: 40,
+  fontSize: 36,
+  fontWeight: '100',
+  alignSelf: 'center',
+  marginVertical: 5,
+  color: 'white',
 };
 
 export const subtitle = {
@@ -321,14 +325,15 @@ export const subtitle = {
 
 export default {
   mainContainer: {
-    flex: 1,
+    height: '100%',
     padding: 8,
-    backgroundColor: '#C0C0C0',
+    backgroundColor: colors.purpleDusk,
   },
 
   inputText: {
-    backgroundColor: colors.white,
-    borderColor: colors.greenMedium,
+    color: colors.white,
+    backgroundColor: colors.purple,
+    borderColor: colors.blue700,
     borderWidth: 3,
     borderRadius: 16,
     marginVertical: 4,

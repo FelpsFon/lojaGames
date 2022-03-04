@@ -11,14 +11,14 @@ const MyStack = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login}
-          options={{ title: 'Bem-vindo!' }}
+      <Stack.Screen name="Home" component={Home}
+          options={{ title: 'Aproveite a nossa seleção!', headerShown: false }}
         />
-        <Stack.Screen name="Home" component={Home}
-          options={{ title: 'Aproveite a nossa seleção!' }}
+        <Stack.Screen name="Login" component={Login}
+          options={{ title: 'Bem-vindo!', headerShown: false }}
         />
         <Stack.Screen name="Details" component={Details}
-          options={{ title: '' }}
+          options={{ title: `TesteTeste` }}
         />
       </Stack.Navigator>
     </NavigationContainer>
