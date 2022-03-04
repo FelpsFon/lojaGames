@@ -18,7 +18,7 @@ const MyStack = () => {
           options={{ title: 'Bem-vindo!', headerShown: false }}
         />
         <Stack.Screen name="About" component={About}
-          options={{ title: `` }}
+          options={{ title: '', headerStyle: {backgroundColor: '#43425d'}, headerShadowVisible: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
