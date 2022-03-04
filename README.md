@@ -1,3 +1,3 @@
 # lojaGames
 
-Projeto de um protótipo de app para android, desenvolvido em React Native
+Projeto de um app para android, desenvolvido em React Native
