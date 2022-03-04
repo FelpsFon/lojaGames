@@ -292,14 +292,15 @@ export const label = {
 
 export const body = {
   default: {
-    fontSize: 20,
-    lineHeight: 24,
+    fontSize: 16,
+    color: colors.gray100,
+    textAlign: 'justify',
   },
 
   small: {
-    fontSize: 14,
-    lineHeight: 16,
-    letterSpacing: 0.5,
+    fontSize: 16,
+    fontWeight: '400',
+    color: colors.gray100,
   },
 
   modalAlert: {
@@ -314,13 +315,13 @@ export const title = {
   fontSize: 36,
   fontWeight: '100',
   alignSelf: 'center',
-  marginVertical: 5,
   color: 'white',
 };
 
 export const subtitle = {
-  fontSize: 26,
-  lineHeight: 32,
+  fontSize: 24,
+  fontWeight: '300',
+  color: 'white',
 };
 
 export default {

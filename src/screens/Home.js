@@ -1,16 +1,16 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
-import BaseStyles, { list, title } from '../assets/styles/BaseStyles';
+import { View } from 'react-native';
+import BaseStyles, { list } from '../assets/styles/BaseStyles';
 import CustomButton from '../components/CustomButton';
 import CustomList from '../components/CustomList';
-import '../assets/data/List';
+import CustomIcon from '../components/CustomIcon';
 
 const Home = ({ navigation }) => {
   return (
     <View style={BaseStyles.mainContainer}>
-      <Text style={title}>
-        {`Mercadinho dos Games`}
-      </Text>
+    <View style={{ marginVertical: 25, flex: 1 }}>
+      <CustomIcon />
+    </View>
       <View style={list.customListView}>
         <CustomList data={DATA} />
       </View>
@@ -21,7 +21,7 @@ const Home = ({ navigation }) => {
       </View>
       <View style={{ flex: 1 }}>
         <CustomButton
-          title="Detalhes" screen="Details" navigation={navigation}
+          title="Sobre Nós" screen="About" navigation={navigation}
         />
       </View>
     </View>

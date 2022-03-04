@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, Text, TextInput, KeyboardAvoidingView } from 'react-native';
-import BaseStyles, { label, title } from '../assets/styles/BaseStyles';
-import CustomBackground from '../components/CustomBackground';
+import BaseStyles, { label } from '../assets/styles/BaseStyles';
+import CustomIcon from '../components/CustomIcon';
 import CustomButton from '../components/CustomButton';
 
 const Login = ({ navigation }) => {
@@ -12,13 +12,10 @@ const Login = ({ navigation }) => {
         behavior={'height'}
         style={{ flex: 3 }}
       >
-        <View style={{ flex: 1 }}>
-          <Text style={title}>
-            {`Mercadinho dos Games`}
-          </Text>
-          <CustomBackground />
+        <View style={{ marginVertical: 25, flex: 1 }}>
+          <CustomIcon />
         </View>
-        <View style={{ marginHorizontal: 25, flex: 1 }}>
+        <View style={{ padding: 20, flex: 1 }}>
           <Text style={label.labelMedium}>
             {`Insira abaixo seu login:`}
           </Text>
@@ -26,11 +23,13 @@ const Login = ({ navigation }) => {
             style={BaseStyles.inputText}
             placeholder='E-mail'
             placeholderTextColor={'#A0A0A0'}
+            onChangeText={text => this.onChangeText(text)}
           />
           <TextInput
             style={BaseStyles.inputText}
             placeholder='Senha'
             placeholderTextColor={'#A0A0A0'}
+            secureTextEntry
             maxLength={20}
           />
         </View>
