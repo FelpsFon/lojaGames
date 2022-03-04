@@ -23,7 +23,6 @@ const Login = ({ navigation }) => {
             style={BaseStyles.inputText}
             placeholder='E-mail'
             placeholderTextColor={'#A0A0A0'}
-            onChangeText={text => this.onChangeText(text)}
           />
           <TextInput
             style={BaseStyles.inputText}
