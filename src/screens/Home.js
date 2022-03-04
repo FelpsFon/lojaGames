@@ -31,7 +31,7 @@ const Home = ({ navigation }) => {
 const DATA = [
   {
     id: '1',
-    title: 'DARK SOULS™',
+    title: 'DARK SOULS™: REMASTERED',
     price: 'R$ 129,90',
     url: 'https://upload.wikimedia.org/wikipedia/pt/7/7c/Dark_Souls_1_capa.png',
   },

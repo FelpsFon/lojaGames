@@ -32,7 +32,7 @@ const MyStack = () => {
 const DATA = [
   {
     id: '1',
-    title: 'DARK SOULS™',
+    title: 'DARK SOULS™: REMASTERED',
   },
   {
     id: '2',

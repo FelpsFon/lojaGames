@@ -26,7 +26,7 @@ const DATA = [
     title: 'Minecraft',
     price: 'R$59,99',
     url: 'https://upload.wikimedia.org/wikipedia/pt/thumb/9/9c/Minecraft_capa.png/260px-Minecraft_capa.png',
-    sinopse: 'BE RESOURCEFUL Get crafty and use the surrounding environment to gather building materials—see how breaking down trees can help you create something new. Steve and Alex in battle poses ready to fight mobs SURVIVE THE NIGHT Its always best to avoid the unpredictable by distancing yourself from wandering mobs—you never know whatll happen if they get too close! Redstone switch BUILD SOMETHING AMAZING Discover all the versatile ways dust from the Redstone ore can be used to enhance your creations, bring them to life, or give them some bang.',
+    sinopse: 'Explore mundos gerados aleatoriamente e construa coisas incríveis, desde casas mais simples até grandiosos castelos. Jogue no modo criativo com recursos ilimitados ou minere as profundezas do mundo no modo sobrevivência, criando armas e armaduras para afastar criaturas perigosas. Escale montanhas íngremes, encontre cavernas complexas e extraia grandes veios de minério. Descubra biomas de cavernas verdejantes e com espeleotemas. Ilumine seu mundo com velas para mostrar que você sabe tudo sobre espeleologia e alpinismo!',
     platforms: 'PlayStation 4, Nintendo Switch, Xbox One, Microsoft Windows, Android, IOS',
   },
   {
