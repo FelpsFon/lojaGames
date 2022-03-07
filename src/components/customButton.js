@@ -1,19 +1,21 @@
 import * as React from 'react';
-import { TouchableOpacity, View, Text } from 'react-native';
-import BaseStyles, { buttons } from '../assets/styles/BaseStyles';
+import { TouchableHighlight, View, Text } from 'react-native';
+import BaseStyles, { buttons, colors } from '../assets/styles/BaseStyles';
 
 class CustomButton extends React.Component {
   render() {
     const { title, navigation, screen } = this.props;
     return (
       <View style={BaseStyles.mainContainer}>
-        <TouchableOpacity
-          style={buttons.flatButton}
+        <TouchableHighlight
+          style={buttons.raisedButton}
+          activeOpacity={0.6}
+          underlayColor={colors.blue700}
           onPress={() => navigation.navigate(screen)} >
-          <Text style={buttons.flatButtonText}>
+          <Text style={buttons.raisedButtonText}>
             {`${title}`}
           </Text>
-        </TouchableOpacity>
+        </TouchableHighlight>
       </View>
     );
   }
