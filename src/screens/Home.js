@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import BaseStyles, { list } from '../assets/styles/BaseStyles';
 import CustomButton from '../components/CustomButton';
 import CustomList from '../components/CustomList';
@@ -24,6 +24,11 @@ class Home extends React.Component {
         <CustomButton
           title="Sobre Nós" screen="About" navigation={this.props.navigation}
         />
+      </View>
+      <View>
+        <Text>
+          {`Oi Inoue`}
+        </Text>
       </View>
     </View>
     )
@@ -120,6 +125,12 @@ const DATA = [
     title: 'Hollow Knight',
     price: 'R$ 62,50',
     url: 'https://image.api.playstation.com/cdn/UP1822/CUSA13632_00/GuFQKWlrIVODEA1su20fCOrNZEYX5CB9.png',
+  },
+  {
+    id: '16',
+    title: 'Danganronpa',
+    price: 'Free',
+    url: 'https://d3fd5j8wprxn3h.cloudfront.net/wp-content/uploads/2022/01/Danganronpa-Trigger-Happy-Havoc-Xbox-Game-Pass.jpg',
   },
 ];
 
